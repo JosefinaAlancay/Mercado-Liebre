@@ -22,6 +22,5 @@ const publicPath=path.join(__dirname,"public")
 app.use(express.static(publicPath))
 
 
-
-const port=4000
-app.listen(port)
+app.listen(process.env.PORT || 4000,()=>{
+})
