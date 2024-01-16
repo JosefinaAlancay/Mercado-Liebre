@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+/*Header*/
+header {
+    height: 100px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--Amarillo);
+    color: var(--Gris-claro);
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.medio {
+    display: flex;
+    flex-direction: row;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.infomacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.infomacion .logo {
+    padding: 5px 0;
+}
+
+.nav-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-form form,
+.nav-form .navbar {
+    padding: 15px 0;
+}
+
+.nav-form form input {
+    width: 100%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid white;
+    padding: 7px 15px; 
+}
+
+.cuenta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuenta .ofertas {
+    color: black;
+    padding: 5px;
+    font-size: 24px;
+}
+/*Header*/
+
+.imagen-central {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.imagen-central img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+/*Producto*/
+
+main {
+    box-sizing: border-box;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 100%; /* Puedes ajustar esto según tu diseño */
+    margin: 0 auto; /* Centra el contenido en la página */
+    padding: 0 15px; /* Añade espacio de relleno a los lados según tu diseño */
+}
+
+
+
+.Titulo{
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+    
+}
+
+.Titulo h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.product {
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1;
+    width: calc(55%-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.last-visit, .offers {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.last-visit h2,
+.offers h2 {
+    font-size: 24px;
+    color: #03264C;
+    margin-bottom: 15px;
+    padding-left: 2px;
+}
+
+.product-desc-box {
+    position: relative;
+}
+
+.product-delivery-icon {
+    color: var(--Verde);
+    font-size: 25px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-container p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 18px;
+    color: #03264C;
+    margin:0;
+}
+/*Producto*/
+
+
+/*Footer*/
+footer {
+    background-color: white;
+    color: #ebebeb;
+    padding: 20px;
+
+}
+
+.payment-info,
+.free-shipping,
+.security-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.payment-info i,
+.free-shipping i,
+.security-info i {
+    font-size: 30px;
+    color: var(--Celeste);
+    margin-bottom: 1px;
+}
+
+.payment-info h3,
+.free-shipping h3,
+.security-info h3 {
+    font-size: 24px;
+    color: var(--Gris-oscuro);
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.payment-info p,
+.free-shipping p,
+.security-info p {
+    font-size: 14px;
+    color:var(--Gris-oscuro);
+    margin-top: 1px;
+    margin-bottom: 30px;
+}
+
+.copyright p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--Gris-claro);
+}
+
+/*Footer*/
+
+
+
