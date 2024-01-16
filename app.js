@@ -4,7 +4,7 @@ const path=require("path")
 const app=express()
 
 app.get("/",(req,res)=>{
-    let homePath=path.join(__dirname ,"MercadoLibre","Mercado-Liebre","views","home.html")
+    let homePath=path.join(__dirname ,"views","home.html")
     res.sendFile(homePath)
 })
 
